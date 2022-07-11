@@ -12,7 +12,7 @@ const { exec } = require("child_process");
 //     }
 //     console.log(`stdout: ${stdout}`);
 // });
-exec("echo hostname >> notes.md && git add . && git commit -m 'hi' && git push origin main", (error, stdout, stderr) => {
+exec("echo hostname >> notes.md && git config --global user.email paglipay@gmail.com && git config --global user.name 'Paul Aglipay' && git add . && git commit -m 'hi' && git push origin main", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
