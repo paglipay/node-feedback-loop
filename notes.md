@@ -6,3 +6,4 @@
 $HOST  
 hostname  
 hostname  
+hostname
