@@ -12,7 +12,7 @@ exec("ls -la", (error, stdout, stderr) => {
     }
     console.log(`stdout: ${stdout}`);
 });
-exec("echo 'HI' >> notes.md && git add . && git commit -m 'hi' && git push origin main", (error, stdout, stderr) => {
+exec("echo 'HI $HOSTNAME' >> notes.md && git add . && git commit -m 'hi' && git push origin main", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
