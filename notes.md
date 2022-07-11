@@ -4,3 +4,4 @@
 'HI $HOSTNAME'  
 'HI ' $HOSTNAME  
 $HOST  
+hostname  
