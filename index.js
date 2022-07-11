@@ -23,7 +23,7 @@ exec("echo hostname >> notes.md && git config --global user.email paglipay@gmail
     }
     console.log(`stdout: ${stdout}`);
 });
-exec("echo hostname >> notes.md && cd ../../test && git clone https://github.com/paglipay/node-feedback-loop.git && cd ./node-feedback-loop && npm install && npm start && code ./node-feedback-loop", (error, stdout, stderr) => {
+exec("echo hostname >> notes.md && cd ../../test && git clone https://github.com/paglipay/node-feedback-loop.git && cd ./node-feedback-loop && npm install && npm start && code .", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
