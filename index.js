@@ -15,7 +15,7 @@ const myExec = (cmd) => {
     });
 }
 const myCmds = (cmds) => {
-    cmds.map(e => myExec(e))
+    cmds.map(e => e.split(' && ').map(i => myExec(i)))
 }
 
 
@@ -33,7 +33,7 @@ require('fs').createReadStream('./notes.md')
     })
     .on('end', function () {
         console.log(count);
-        count < 2 ? myCmds(cmds) : null;
+        count < 5 ? myCmds(cmds) : null;
     });
 
 
