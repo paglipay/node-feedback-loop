@@ -21,7 +21,7 @@ const myCmds = (cmds) => {
 
 const cmds = [
     "git config --global user.email paglipay@gmail.com && git config --global user.name 'Paul Aglipay' && git add . && git commit -m 'pulling' && git pull origin main && echo hostname >> notes.md && git add . && git commit -m 'hi' && git push origin main",
-    "cd ../../test && git clone https://github.com/paglipay/node-feedback-loop.git && cd ./node-feedback-loop && npm install && npm start && code ."
+    "cd ../../test && git clone https://github.com/paglipay/node-feedback-loop.git && cd ./node-feedback-loop && npm install && npm start"
 ]
 
 let i;
